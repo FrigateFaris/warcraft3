@@ -1,0 +1,13 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    {% for audio in replicas %}
+    <div style="margin:10px">
+        <p>{{ audio.title }}</p>
+        <audio controls style="border-radius: 7px;">
+            <source src="{{ audio.replicas.url }}">
+        </audio>
+    </div>
+
+    {% endfor %}
+{% endblock content %}

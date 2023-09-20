@@ -1,0 +1,13 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    {% for music in musics %}
+    <div style="margin:10px">
+        <p>{{ music.title }}</p>
+        <audio controls style="border-radius: 7px;">
+            <source src="{{ music.musics.url }}">
+        </audio>
+    </div>
+
+    {% endfor %}
+{% endblock content %}

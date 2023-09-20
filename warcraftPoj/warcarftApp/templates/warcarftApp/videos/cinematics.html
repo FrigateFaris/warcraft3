@@ -1,0 +1,9 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    {% for cinematic in cinematics %}
+        <video controls loop width="400px" style="margin: 20px">
+            <source src="{{ cinematic.cinematic_video.url }}">
+        </video>
+    {% endfor %}
+{% endblock content %}

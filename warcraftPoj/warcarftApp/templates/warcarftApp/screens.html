@@ -1,0 +1,7 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    {% for screen in screens %}
+        <img src="{{ screen.photo.url }}" class="img-thumbnail" alt="{{ screen }}" width="400px" style="margin: 20px">
+    {% endfor %}
+{% endblock content %}

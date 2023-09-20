@@ -1,0 +1,24 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    <div class="row" style="margin: 20px">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">игровой процесс </h5>
+            <p class="card-text">Нажмите кнопку ниже чтобы перейти к игровой процесс персонажей</p>
+            <a href="{% url 'game_process' %}" class="btn btn-primary">game process -></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Синематики</h5>
+            <p class="card-text">Нажмите кнопку ниже что бы перейти к разделу синематики</p>
+            <a href="{% url 'cinematic' %}" class="btn btn-primary">cinematic -></a>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}

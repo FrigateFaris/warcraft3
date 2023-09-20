@@ -1,0 +1,9 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    {% for process_video in game_process %}
+        <video controls loop width="400px" style="margin: 20px">
+            <source src="{{ process_video.game_process_video.url }}">
+        </video>
+    {% endfor %}
+{% endblock content %}

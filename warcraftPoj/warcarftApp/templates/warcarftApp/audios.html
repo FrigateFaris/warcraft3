@@ -1,0 +1,24 @@
+{% extends 'warcarftApp/navBar.html' %}
+
+{% block content %}
+    <div class="row" style="margin: 20px">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Реплики</h5>
+            <p class="card-text">Нажмите кнопку ниже чтобы перейти к репликам персонажей</p>
+            <a href="{% url 'replicas' %}" class="btn btn-primary">replicas -></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Музыка</h5>
+            <p class="card-text">Нажмите кнопку ниже что бы перейти к разделу музыка</p>
+            <a href="{% url 'musics' %}" class="btn btn-primary">musics -></a>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
